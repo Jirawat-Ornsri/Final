@@ -1,0 +1,25 @@
+// Testing Insert a new Student
+// method: post
+// URL: http://localhost:3000/student
+// body: raw JSON
+// {
+// "student": {
+// "STU_ID": 99998,
+// "STU_FNAME": "Wudhichart",
+// "STU_LNAME": "Sawangphol",
+// "STU_AGE": 35
+// }
+// }
+
+// Testing Insert a new Student
+// method: post
+// URL: http://localhost:3000/student
+// body: raw JSON
+// {
+// "student": {
+// "STU_ID": 99998,
+// "STU_FNAME": "Wudhichart",
+// "STU_LNAME": "Sawangphol",
+// "STU_AGE": 35
+// }
+// }

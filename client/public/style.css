@@ -1,0 +1,1092 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* -------------------- nav start ------------------ */
+nav.con {
+    background-color: rgb(255, 255, 255);
+    height: 120px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1.5px solid gray;
+}
+
+.con-item {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+}
+
+.logo {
+    margin-left: 70px;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+}
+
+ul.menu {
+    display: flex;
+    list-style: none;
+    margin-right: 70px;
+
+}
+
+ul.menu li {
+    padding-bottom: 5px;
+    margin-left: 3rem;
+    position: relative;
+}
+
+ul.menu a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+} 
+
+/* hover start */
+ul.menu li:hover::after {
+    width: 100%;
+}
+
+ul.menu li::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(110, 110, 110);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.25s ease;
+}
+/* hover end */
+
+/* open menu start */
+.open-menu, .close-menu {
+    position: absolute;
+    cursor: pointer;
+
+    display: none;
+}
+
+.open-menu {
+    font-size: 1.5rem;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    font-weight: 650;
+    font-size: 1rem;
+    font-style: initial;
+
+    top: 30px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+/* open menu end */
+
+/* -------------------- nav end ------------------ */
+
+/*---------------------section start ---------------------*/
+
+/* -------------------- page login section start -----------------------*/
+.login-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.login-frame {
+    background-color: #edebeb;
+    border-radius: 10px;
+    padding: 50px;
+    width: 400px;
+    margin: 0 3rem;
+}
+
+
+.login-item h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: oblique;
+    font-size: xx-large;
+}
+
+.login-item h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: small;
+    margin-bottom: 20px;
+}
+
+.login-frame input {
+    width: 100%;
+    background-color: #edebeb;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+}
+
+.login-frame button[type = "button"] {
+    background-color: black;
+    color: aliceblue;
+    margin-top: 30px;
+    cursor: pointer;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* -------------------- page login section end -----------------------*/
+
+/* -------------------- page search section start -----------------------*/
+section.con {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.item-img {
+    margin-top: 3rem;
+}
+
+.item-img img {
+    width: 100%;
+}
+
+/*--- search bar ---*/
+.search-con {
+    background-color: rgb(236, 236, 236);   
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+form.search-bar {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-by-click {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.search-by-click input {
+    width: 95%;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.search-by-click a{
+    width: 5%;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.search-by-click button{
+    width: 5%;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.search-by-filter{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12rem;
+}
+
+ul.filter {
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+ul.filter h4 {
+    margin-bottom: 10px;
+}
+
+ul.filter li {
+    margin-left: 10px;
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: rgb(67, 67, 67);
+}
+
+/* --- search bar --- */
+
+.product-all {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+}
+
+.product-all h3{
+    font-size: 1.5rem;
+}
+
+.product-all a{
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    font-weight: 450;
+    font-size: 14px;
+    margin-left: 2.5rem;
+}
+
+.item-products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+}
+
+.item-products img {
+    width: 100%;
+}
+
+.item-products a {
+    float: right;
+    color: rgb(228, 0, 0)
+}
+
+.product-name {
+    margin-top: .5rem;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.product-detail {
+    color: rgb(169, 169, 169);
+    font-size: 14px;
+}
+
+.product-price {
+    font-weight: 500;
+}
+/* -------------------- page search section end -----------------------*/
+
+/* -------------------- page add product section start -----------------------*/
+.section-con {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid rgb(226, 226, 226);
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    display: block;
+}
+
+.item-con {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.section-items span {
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+}
+
+.section-items {
+    border:  1px solid rgb(210, 210, 210);
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.section-items label {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section-items input {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #f1f1f1;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.section-items select {
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    padding: .8rem;
+    margin-top: 10px;
+}
+
+.section-items textarea {
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    background-color: #f1f1f1;
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 5px;
+    padding: .8rem;
+}
+
+.input-item {
+    margin-bottom: 1rem;
+}
+
+.img-view p{
+    color: rgb(98, 98, 98);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.img-view input[type="file"] {
+    background: none;
+    border: none;
+    padding-left: 30%;
+}
+
+.img-view input[type="file"]::file-selector-button {
+    background-color: rgb(0, 17, 255);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #e4e4e4;
+    font-size: 12px;
+}
+
+.dropfile-con {
+    margin-top: 1rem;
+    border: 3.5px dashed rgb(56, 56, 56);
+    background-color: rgb(225, 224, 224);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.send-con {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.send-con button{
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #c3c3c3;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.send-con button[type="submit"] {
+    background-color: rgb(0, 145, 255);
+    color: white;
+}
+/* -------------------- page add product section end -----------------------*/
+
+/* -------------------- page edit product section start -----------------------*/
+.send-con-edit {
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-delete a{
+    color: rgb(255, 0, 0);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.button-upload a {
+    padding: .7rem 1rem;
+    background-color: rgb(0, 145, 255);
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.button-upload a:nth-child(2) {
+    padding: .7rem 1rem;
+    background-color: rgb(208, 208, 208);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.send-con-edit button{
+    padding: .7rem 1rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #c3c3c3;
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+/* .send-con-edit button[type="submit"] {
+    background-color: rgb(0, 145, 255);
+    color: white;
+} */
+/* -------------------- page edit product section end -----------------------*/
+
+/* -------------------- page about us section start -----------------------*/
+.about-con {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.about-con h1{
+    margin-top: 5rem;
+    font-size: 5rem;
+}
+
+.about-grid-con {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.about-item {
+    
+    border-radius: 1em;
+    padding: 1.5rem 1.5rem;
+    background-color: rgb(240, 240, 240);
+}
+
+.about-item img{
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 1em;
+}
+
+.about-item h3 {
+    margin-top: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.about-item p {
+    margin-bottom: 16px;
+}
+
+ul.contact {
+    list-style: none;
+}
+
+ul.contact h4{
+    margin-bottom: 2px;
+}
+
+ul.contact i{
+    margin-right: 5px;
+    color: black;
+}
+
+ul.contact li{
+    margin-bottom: 3px;
+}
+
+ul.contact a{
+    text-decoration: none;
+    color: gray;
+}
+
+/* -------------------- page about us section end -----------------------*/
+
+/* -------------------- for Product Detail section start -----------------------*/
+.product-detail-con {
+    padding: 100px;
+}
+
+/*ปรับขนาดรูปภาพ*/
+.product-detail-con img{
+    width: 400px;
+    float: left;
+    margin-right: 50px;
+}
+
+/*ข้อความทั้งหมด*/
+.product-detail-con article{
+    clear: none;
+    display: block;
+}
+
+/*---ข้อความแต่ละส่วน---*/
+.product-detail-con .proname{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.product-detail-con .shortdes{
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.product-detail-con .price, .quantity{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/*ลดความกว้าง quantity box*/
+.quantity input{
+    font-size: 25px;
+    width: 100px;
+    margin-bottom: 40px;
+}
+
+
+/*ปุ่มใส่ตะกร้า*/
+.button #toCart{
+    font-size: 16px;
+    padding: 10px 54px;
+    margin-right: 5px;
+    background-color: black;
+    color: white;
+}
+
+/*ปุ่มกดใจ*/
+.button #heart{
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: rgb(218, 217, 217);
+    color: #000000;
+}
+
+/*รายละเอียดสินค้า*/
+.head-info {
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.description-info{
+    margin-top: 10px;
+    font-size: 17px;
+}
+/* -------------------- for Product Detail section end -----------------------*/
+
+/* -------------------- for home section start -----------------------*/
+/*section welcome*/
+main .welcome {
+    margin-top: 30px;
+    padding: 10% 100px;
+    /*ที่มา icon จาก: www.canva.com @@thejunessarendoncollection*/
+    background-image: url(https://lh5.googleusercontent.com/d/1FoFxTvCgIDOzXD6Bxr4taBKagwP16e55);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+.welcome #title {
+    font-size: 60px;
+    font-weight: 650;
+    margin-bottom: 20px;
+}
+
+.welcome #content{
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+.welcome #button{
+    font-size: 16px;
+    color: white;
+    display: flexbox;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+/*section about our product*/
+main .about{
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+main .head{
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+main .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.about .col{
+    width: 15%;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 30px 0;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 7px 10px rgba(0,0,0,0.12);
+}
+
+.about .col img{
+    width: 100px;
+    margin-bottom: 40px;
+}
+/* -------------------- for home section end -----------------------*/
+
+/* -------------------- Admin manage section start -----------------------*/
+/*ลิ้งกลับหน้าจัดการสินค้า*/
+main .back-to-page{
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+/*หัวเรื่อง (คำว่า "Admin")*/
+main .head-admin {
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+/*ปุ่ม add admin*/
+main .head-admin a{
+    background-color: lavender;
+    color: black;
+}
+
+/*---search bar---*/
+main .searchBar input{
+    font-size: 15px;
+    width: 50%;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+/*ปุ่ม search*/
+main .searchBar a, .head-admin a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 9px 15px;
+    border: 1px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+
+/*---ตาราง---*/
+table{
+    margin: auto; /*ให้ตารางอยู่ตรงกลาง*/
+    width: 100%; 
+    margin-top: 30px;
+    border-collapse: collapse; /*ให้เส้นใต้ที่คั้นแต่ละแถวต่อกัน*/
+}
+
+table th, td{
+    padding: 20px;
+    text-align: left;
+    border-bottom: 2px solid black; /*เพิ่มเส้นใต้คั้นระหว่างแถว*/
+}
+
+/*เอาเม้าวางที่แถว แล้วแถวนั้นเปลี่ยนสี*/
+table tr:hover{
+    background-color: #f5f5f5;
+}
+
+/*เม้าวางที่ปุ่มแก้ไข (icon รูปดินสอ) แล้วเปลี่ยนสี*/
+table td a:hover{
+    color: rgb(179, 0, 0);
+}
+
+/*เอาเส้นใต้ปุ่มแก้ไข (icon รูปดินสอ) ออก*/
+table td a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+/*จัดขนาด main section*/
+.admin-manage-con {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/* -------------------- Admin manage section end -----------------------*/
+
+/* -------------------- Add Admin section start -----------------------*/
+.grid-con-admin {
+    max-width: 800px;
+    margin: 0 auto;
+   
+}
+
+.page-main {
+    grid-area: main;
+    font-size: 25px;
+    line-height: 1.9;
+    padding: 20px 50px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: -120px;
+   
+}
+
+.page-main p1 {
+    font-size: 35px;
+}
+
+.page-main input {
+    padding: 10px 20px;
+    width: 93%;
+    height: 5%;
+    font-size: 15px;
+    border: 3px;
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+    margin-bottom: 20px;
+}
+
+div .ID {
+    width: 50%;
+    height: 5%;
+}
+div .title{
+    width: 20%;
+    height: 5%;
+}
+div .name{
+    width: 40%;
+    height: 5%;
+}
+
+/*---ปุ่ม add, update, delete*/
+.btn {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.boxDelete {
+    width: 20%;
+   
+}
+
+.boxUpdate {
+    width: 40%;
+  
+}
+
+.btn a{
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+/*ปุ่ม add*/
+.ADD {
+    background: #00641b;
+    text-decoration: none;
+    color: white;
+    
+}
+/*เม้าวางแล้วเปลี่ยนสี*/
+.ADD:hover{
+    color: rgb(255, 255, 255);
+    background: #00be20;
+}
+/*ปุ่ม delete*/
+.Delete {
+   
+    background: #d50000;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+/*เม้าวางแล้วเปลี่ยนสี*/
+.Delete:hover{
+    color: rgb(255, 255, 255);
+    background: #790501;
+}
+
+/*ปุ่ม update*/
+.Update {
+
+    background: #1b1b1b;
+    text-decoration: none;
+    color: white;
+}
+/*เม้าวางแล้วเปลี่ยนสี*/
+.Update:hover {
+    color: rgb(255, 255, 255);
+    background: #3d3d3d;
+}
+
+/*ปุ่ม cancel*/
+.Cancel {
+ 
+    background: #e2e2e2;
+    text-decoration: none;
+    color: black;
+}
+/*เม้าวางแล้วเปลี่ยนสี*/
+.Cancel:hover{
+    color: rgb(255, 255, 255);
+    background: #aa0600;
+}
+/* -------------------- Add Admin section end -----------------------*/
+
+/* -------------------- error 404 start -----------------------*/
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+}
+
+.error-con {
+    max-width: 60%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.error-con a {
+    color: red;
+}
+
+/* -------------------- error 404 end -----------------------*/
+
+/*--------------------- section end ---------------------*/
+
+/* -------------------- footer start -----------------------*/
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.footer-item-con {
+    margin-top: 10rem;
+    border-top: 1px solid rgb(187, 187, 187);
+    border-bottom: 1px solid rgb(187, 187, 187);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.footer-item {
+    display: flex;
+}
+
+.footer-item input {
+    padding: 0.5rem 1rem;
+    width: 70%;
+}
+
+.footer-item button {
+    padding: 0.5rem 1rem;
+    background-color: black;
+    width: 30%;
+    font-size: 12px;
+    color: white;
+}
+
+ul.social {
+    display: flex;
+    list-style: none;
+}
+
+ul.social li{
+    margin-left: 1rem;
+}
+
+ul.social a{
+    color: black;
+    font-size: 2rem;
+}
+
+.footer-grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item h3 {
+    font-size: 14px;
+}
+
+ul.item {
+    list-style: none;
+}
+
+ul.item li {
+    margin-top: 10px;
+}
+
+ul.item a{
+    text-decoration: none;
+    color: gray;
+    font-size: 12px;
+}
+
+
+.grid-item p {
+    margin-top: 10px;
+    font-size: 12px;
+    color: gray;
+}
+
+.footer-payment-con {
+    margin-top: 5rem;
+    border-top: 1px solid rgb(187, 187, 187);
+    border-bottom: 1px solid rgb(187, 187, 187);
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+ul.payment {
+    display: flex;
+    list-style: none;
+}
+
+ul.payment li{
+    margin-left: 1rem;
+}
+
+ul.payment i{
+    color: black;
+    font-size: 1.5rem;
+}
+
+.copyright {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    margin-bottom: 3rem;
+    flex-direction: column;
+}
+
+.copy {
+    font-size: 10px;
+    color: black;
+}
+
+.credit{
+    margin-top: 10px;
+    font-size: 10px;
+    color: gray;
+}
+/* -------------------- footer end -----------------------*/
+
+/* -------------------- Disply 610px start---------- */
+@media (max-width: 610px) {
+
+    /* --- nav start --- */
+    ul.menu {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: #e5e5e5;
+        transition: all 0.2s ease-in-out;
+    }
+
+    ul.menu li {
+        margin-top: 40px;
+    }
+
+    ul.menu a {
+        padding: 10px;
+    }
+
+    .open-menu, .close-menu {
+        display: block;
+    }
+
+    #check:checked ~ ul.menu {
+        left: 0;
+    }
+    /* --- nav end --- */
+
+    /* --- page search section start --- */
+    form.search-bar input{
+       width: 70%;
+    }
+    
+    form.search-bar button{
+       width: 30%;
+    }
+
+    .item-products-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* --- page search section end --- */
+
+    /* --- footer start --- */
+
+    .footer-item-con {
+        display: block;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+
+    .grid-item {
+        margin-bottom: 50px;
+    }
+    /* --- footer end --- */
+}
+/* -------------------- Disply 610px end---------- */

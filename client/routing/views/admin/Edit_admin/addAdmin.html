@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Add Admin Information</title>
+    <!-- logo icon -->
+    <link rel="icon" type="image/x-icon" href="../../../img/logo_pic1.webp">
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   <!-- -------- script start --------------- -->
+
+   <script src="/js/callservice.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+   <!-- -------- script end --------------- -->
+
+    <!-- -------- nav start --------------- -->
+    <nav class="con">
+        <div class="con-item">
+            <div class="logo">
+                <a href="/">NATURAFACE</a>
+            </div>
+    
+            <input type="checkbox" id="check">
+            <ul class="menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about-us">ABOUT US</a></li>
+                <li><a href="/search"><i class="fa fa-search"></i></a></li>
+                <li><a href="/"><i class="fa fa-sign-out"></i></a></li>
+                <label for="check" class="close-menu">X</label>
+            </ul>
+            <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
+        </div>
+
+    </nav>
+    <!-- -------- nav end --------------- -->
+
+    <div class="grid-con-admin">
+
+        <div class="page-main">
+            <form action="Information_Update.html" method="GET">
+                <p1> Admin Information </p1>
+                <i class="fa-solid fa-user"></i>
+                <br>
+
+                <p2> Employee ID </p2>
+                <br>
+                <!--กรอก ID-->
+                <input type="text" id="txtEmp" pattern="6587[0-9]{1}[0-9]{1}[0-9]{1}" required="required" class="ID" placeholder="6587XXX ">
+                <br>
+
+                <p2> Name </p2>
+                <br>
+                <!--กรอกคำนำหน้า-->
+                <input type="text" id="txtTitle" required="required" class="title" placeholder="Title">
+                <!--กรอกชื่อจริง-->
+                <input type="text" id="txtFN" required="required" class="name" placeholder="Firstname">
+                <!--กรอกนามสกุล-->
+                <input type="text" id="txtLN" required="required" class="name" placeholder="Lastname">
+                <br>
+                
+                <p2> Email </p2>
+                <br>
+                <!--กรอก email-->
+                <input type="email" name="userEmail" id="ID_Em" required="required" placeholder="Email">
+                <br>
+
+                <p2> Password </p2>
+                <br>
+                <!--กรอก password-->
+                <input type="password" name="userPassword" id="txtpass" required="required" placeholder="Password">
+                <br>
+
+                <p2> Mobile Number </p2>
+                <!--กรอกเบอร์โทรศัพท์-->
+                <input type="tel" name="mobile" id="ID_tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required="required" placeholder="XXXXXXXXXX">
+                <br>
+
+                <div class="btn">
+                    <!--ปุ่ม add ลิ้งไปหน้าตารางโชว์ข้อมูล admin-->
+                    <a class="ADD" href="adminManagement" id="insert">Add</a>
+                    <!--ปุ่ม cancel -->
+                    <a class="Cancel" href="/adminManagement">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- -------- footer start --------------- -->
+    <footer>
+        <div class="footer-item-con">
+            <div class="footer-item">
+                <input type="text" id="send" placeholder="MESSAGE">
+                <button type="submit">SEND</button>
+            </div>
+
+            <ul class="social">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-grid">
+            <div class="grid-item">
+                <h3>NAVIGATE</h3>
+                <ul class="item">
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/search">SEARCH</a></li>
+                    <li><a href="/about-us">ABOUT US</a></li>
+                    <li><a href="/search">PRODUCT</a></li>
+                    <li><a href="/about-us">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h3>HELP</h3>
+                <ul class="item">
+                    <li><a href="/about-us">FAQ</a></li>
+                    <!-- <li><a href="">AIZE GUIDE</a></li>
+                    <li><a href="">SHIPPING & RETURNS</a></li> -->
+                    <li><a href="/about-us">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h3>ACCOUNT</h3>
+                <ul class="item">
+                    <li><a href="/login">LOG IN</a></li>
+                    <!-- <li><a href="">REGISTER</a></li> -->
+                </ul>
+            </div>
+
+            <div class="grid-item">
+                <h3>SHOUT OUT</h3>
+                <p>We appreciate your interest in Our NATURAFACE We appreciate your support. Please don't hesitate to ask if there is a way we can help. We are eager to help you.</p>
+            </div>
+        </div>
+
+        <div class="footer-payment-con">
+            <ul class="payment">
+                <li><i class="fa fa-cc-visa"></i></li>
+                <li><i class="fa fa-credit-card"></i></li>
+                <li><i class="fa fa-cc-mastercard"></i></li>
+                <li><i class="fa fa-cc-paypal"></i></li>
+                <li><i class="fa fa-cc-discover"></i></li>
+                <li><i class="fa fa-cc-jcb"></i></li>
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <div class="copy">
+                COPYRIGHT &COPY; 2023 Web Project.
+            </div>
+            
+            <div class="credit">
+                Web Project , POWERED BY Group5Sec2
+            </div>
+        </div>
+
+    </footer>
+    <!-- -------- footer end --------------- -->
+</body>
+
+</html>

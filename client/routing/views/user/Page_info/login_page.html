@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- logo icon -->
+    <link rel="icon" type="image/x-icon" href="../../../img/logo_pic1.webp">
+    <!-- css -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <script src="/js/callservice.js"></script>
+    <!-- -------- nav start --------------- -->
+    <nav class="con">
+        <div class="con-item">
+            <div class="logo">
+                <a href="/">NATURAFACE</a>
+            </div>
+    
+            <input type="checkbox" id="check">
+            <ul class="menu">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/about-us">ABOUT US</a></li>
+                <li><a href="/search"><i class="fa fa-search"></i></a></li>
+                <li><a href="/login"><i class="fa fa-user"></i></a></li>
+                <label for="check" class="close-menu">X</label>
+            </ul>
+            <label for="check" class="open-menu"><i class="fa fa-bars"></i></label>
+        </div>
+
+    </nav>
+    <!-- -------- nav end --------------- -->
+
+    <!-- -------- section start --------------- -->
+    <section class="login">
+        <div class="login-con">
+            <div class="login-frame">
+                <div class="login-item">
+                    <h1>Login</h1>
+                    <h3>Login as a Admin User</h3>
+                </div>
+                
+                <form id="loginForm">
+                    <!-- input email -->
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required> <br>
+
+                    <!-- input pass -->
+                    <input type="password" id="passwd" name="passwd" placeholder="Enter your password" required> <br>
+
+                    <!-- <input type="submit" value="Login">   -->
+                    <!-- <a href="/search_edit.html">Login</a> -->
+
+                    <!-- login button -->
+                    <button type="button" id="loginADD">Login</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- -------- section end --------------- -->
+</body>
+
+</html>
